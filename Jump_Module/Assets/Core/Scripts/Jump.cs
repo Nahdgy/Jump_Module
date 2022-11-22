@@ -39,9 +39,4 @@ void Jumping()
         Jumping();
     }
 
-    private void Start()
-    {
-        
-    }
-
 }
