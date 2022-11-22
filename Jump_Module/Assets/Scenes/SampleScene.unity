@@ -433,7 +433,6 @@ MonoBehaviour:
   rb: {fileID: 1865133794}
   Animation: {fileID: 0}
   isGrounded: 0
-  jump: 0
   Ground: 3
 --- !u!1 &2011428584
 GameObject:
