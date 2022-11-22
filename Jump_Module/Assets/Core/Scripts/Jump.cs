@@ -11,20 +11,17 @@ public class Jump : MonoBehaviour
     [SerializeField] private int Ground = 3;
 
 //Method of the jumping action
-void Jumping()
+public void Jumping()
 //Jump counter and limiter  
     {
         if(nbSauts >= nbMaxSauts)
         { 
             return;
         }
-// Input used to do the jump                
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
             rb.AddForce(transform.up * jumpForce);
-            nbSauts++;
-        }            
+            nbSauts++;        
     }
+
 // reboot of jump counter    
     private void OnCollisionEnter(Collision collision)
     {
@@ -33,10 +30,7 @@ void Jumping()
             nbSauts = 0;
         }
     }
-// call of Jump fonction    
-    private void Update()
-    {
-        Jumping();
-    }
+   
+  
 
 }
